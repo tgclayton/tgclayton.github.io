@@ -11,5 +11,7 @@ h1 {
     border: 10px solid red;
     height: 7.5%;
     width: 7.5%;
-    outline: 5px solid green;
-}
+    outline: 2em solid green;
+    box-shadow: inset 0 0 0 2em lightGreen;
+    background-clip: content-box;
+    float: left;
