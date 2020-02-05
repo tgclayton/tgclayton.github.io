@@ -9,9 +9,9 @@ h1 {
     /* border-color: rgb(175, 1, 1);
     border-width: 10px; */
     border: 10px solid red;
-    height: 7.5%;
-    width: 7.5%;
+    height: 10em;
+    width: 10em;
     outline: 2em solid green;
-    box-shadow: inset 0 0 0 2em lightGreen;
+    box-shadow: inset 0 0 0 2em rgb(246, 250, 3);
     background-clip: content-box;
     float: left;
