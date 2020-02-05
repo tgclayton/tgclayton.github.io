@@ -1,3 +1,15 @@
 h1 {
     color: red;
 }
+
+.visible {
+    background-color: blue;
+    margin: 2em;
+    padding: 2em;
+    /* border-color: rgb(175, 1, 1);
+    border-width: 10px; */
+    border: 10px solid red;
+    height: 7.5%;
+    width: 7.5%;
+    outline: 5px solid green;
+}
