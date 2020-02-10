@@ -1,24 +1,98 @@
+@charset "UTF-8";
+
+#full-page {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
 body {
     background: url(../images/concrete2.jpg);
     background-size: cover;
+    font-family: 'Cormorant Garamond', serif;
+    --title-box-background: dimgrey;
+    --info-box-background: darkgrey;
+    --title-shadow: #cc9900 ;
+    --title-box-shadow: rgb(43, 42, 42) ; 
+    overflow: scroll;
+
 }
 
 h1 {
-    color: red;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: hsl(120, 100%, 10%);
+    text-shadow: -1px 0 var(--title-shadow), 0 1px var(--title-shadow), 1px 0 var(--title-shadow), 0 -1px var(--title-shadow);
+    font-size: 30pt;
 }
 
-.visible {
-    background-color: blue;
-    margin: 2em;
-    padding: 2em;
-    /* border-color: rgb(175, 1, 1);
-    border-width: 10px; */
-    border: 10px solid red;
-    height: 10em;
-    width: 10em;
-    outline: 2em solid green;
-    box-shadow: inset 0 0 0 2em rgb(246, 250, 3);
-    background-clip: content-box;
-    float: left;
+.info-box { /*Defines ususal boxes of information*/
+    background-color:var(--info-box-background);
+    box-shadow: 4px 4px var(--title-box-background);
+    text-align: justify;
+    border: 1px solid var(--title-box-background);
+    /* border-top: 1px solid var(--title-box-background); */
+}
 
+.title-box { /*Styles boxes containing titles*/
+    background-color: var(--title-box-background);
+    box-shadow: 4px 4px var(--title-box-shadow);
+    border: 1px solid var(--title-box-shadow);
+}
+
+.title { /*Defines positioning of page titles*/
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+    position: relative;
+}
+
+.main-content { /*Defines boxes centre page*/
+    margin: 0 auto 2em;
+    width: 30em;
+    position: relative;
+    height: 10em;
+    /* top: 7em; */
+}
+
+#main-title { /*Styles the title on the index page*/
+    height: 8em ;
+    width: 70%em;
+    margin: 0 auto;
+    position: relative;
+    top: 1em;
+}
+
+#navbar {
+    margin: 3em 2em 0 ;
+    position: sticky;
+    float: left;
+    height: 30em;
+    width: 10em;
+    top: 10%
+}
+
+.nav-button {
+    /* margin: auto; */
+    padding: 1.5em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    color: black;
+    
+}
+
+.nav-button:hover {
+    background-color: gray;
+}
+
+#footer {
+    height: 3em;
+    position: absolute;
+    bottom: 0;
+}
+
+#side-block {
+    width: 13em;
+    height: 100%;
+    border: 1px solid black;
+}
