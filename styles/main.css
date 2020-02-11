@@ -8,7 +8,7 @@ html {
     position: relative;
 }
 body {
-    background: url(../images/concrete2.jpg);
+    background: url(..\images\concrete2.jpg);
     background-size: contain;
     font-family: 'Cormorant Garamond', serif;
     --title-box-background: dimgrey;
