@@ -8,7 +8,7 @@ html {
     position: relative;
 }
 body {
-    background: url(../images/concrete2.jpg);
+    background: url(../Images/concrete2.jpg);
     background-size: cover;
     font-family: 'Cormorant Garamond', serif;
     --title-box-background: dimgrey;
@@ -43,7 +43,7 @@ h3 {
     background-size: cover;
 }
 .paper-background {
-    background-image: url(../images/paper2.jpg);
+    background-image: url(../Images/paper2.jpg);
     background-size: cover;
 }
 .dark-grey {
