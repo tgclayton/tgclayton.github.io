@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="..\styles\main.css" type="text/css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="full-page">
+        <div id="main-title" class="title-box dark-grey ">
+            <h1 class="title">Padding, Margins and Borders</h1>
+        </div>
+        <div id="navbar" class="info-box light-grey paper-background">
+            <div class="title" id="nav-title">
+                <h3> Nav Bar </h3>
+            </div>
+            <a class="nav-button" href="../index.html"> Main Page </a>
+            <a class="nav-button" href=""> Cultural Blog </a>
+            <a class="nav-button" href=""> Reflections </a>
+        </div>
+        <div style="height: 20em;" id="boxes-description" class="info-box main-content offset paper-background">
+            <div class="visualiser-container">
+                <div style="background-color: blue;" class="visualise-box"></div>
+            </div>
+            <h3 class="content-title">Content</h3>
+            <p class="content-paragraph"> All elements in css are made of boxes. Each of these boxes is
+                composed of several differant layers wrapped around each other, each of which can be seperately
+                styled and sized. <br><br>
+                This box visualises an element and its different layers, the blue box in the centre is the content.
+                This box contains the actual content of the element, such as text or images.
+                The size of the content box is controlled with the &lt;height&gt; and &lt;width&gt; tags, while
+                its colour is controlled with the &lt;background-color&gt; tag.
+            </p>
+        </div>
+        <div style="height: 20em;" id="padding-description" class="info-box main-content paper-background">
+            <div class="visualiser-container">
+                <div id="padding-box" class="visualise-box"></div>
+            </div>
+            <h3 class="content-title">Padding</h3>
+                <p class="content-paragraph"> This box shows the padding in green. The padding is the
+                    space immediately around the content, often used to put distatance between the content
+                    and the borders of the element or to center content inside a larger element.
+<br><br>
+                    The padding box cannot normally be coloured seperately from the content but I have
+                    shown it here using an internal box-shadow with the background colour attached only to the
+                    content box with background-clip;. </p>
+            
+        </div>
+        <div style="height: 20em;" id="border-description" class="info-box main-content paper-background">
+            <div class="visualiser-container">
+                <div id="border-box" class="visualise-box"></div>
+            </div>
+            <h3 class="content-title">Borders</h3>
+            <p class="content-paragraph"> This box shows the border component highlighted in red. The border is 
+                the area outside of the padding and before the margin begins. The border can be any colour and multiple different styles such as dashed
+                or solid or doubled.
+                <br><br>
+                The properties of the can be set with various tags such as border-color and border-style
+                or by combinin all properties under the single border tag as I have done here. The border show is defined
+                by the code "border: 2px solid red;"
+             </p>
+
+        </div>
+        <div style="height: 20em;" id="margin-description" class="info-box main-content paper-background">
+            <div class="visualiser-container" style="background-color: yellow;">
+                <div class="visualise-box" style="box-shadow: inset 0 0 0 2em white;"></div>
+            </div>
+            <h3 class="content-title">Margins</h3>
+                <p class="content-paragraph">This box shows the margin in yellow. The margin is the area on the outside of 
+                    the element that is usually used for position and for seperating elements from each other, this works because
+                    the margin pushes the element away from other elements.
+                    <br><br>
+                    The margin is invisble and cannot be styled, I have highlighted it here by colouring the background of the 
+                    containing element.
+                </p>
+            
+        </div>
+        <footer id="footer" class="info-box footer light-grey"></footer>
+
+    </div>
+</body>
+
+</html>

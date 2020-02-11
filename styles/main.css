@@ -1,58 +1,80 @@
 @charset "UTF-8";
-
-#full-page {
+html {
     height: 100%;
+}
+#full-page {
+    height: 1700px;
     width: 100%;
     position: relative;
 }
-
 body {
     background: url(../images/concrete2.jpg);
-    background-size: cover;
+    background-size: contain;
     font-family: 'Cormorant Garamond', serif;
     --title-box-background: dimgrey;
     --info-box-background: darkgrey;
     --title-shadow: #cc9900 ;
     --title-box-shadow: rgb(43, 42, 42) ; 
+    --paragraph-shadow: white;
     overflow: scroll;
-
+    position: relative;
 }
-
 h1 {
     color: hsl(120, 100%, 10%);
     text-shadow: -1px 0 var(--title-shadow), 0 1px var(--title-shadow), 1px 0 var(--title-shadow), 0 -1px var(--title-shadow);
     font-size: 30pt;
 }
-
+h3 {
+    margin: 0.5em auto;
+}
 .info-box { /*Defines ususal boxes of information*/
-    background-color:var(--info-box-background);
+    
     box-shadow: 4px 4px var(--title-box-background);
     text-align: justify;
     border: 1px solid var(--title-box-background);
     /* border-top: 1px solid var(--title-box-background); */
 }
-
 .title-box { /*Styles boxes containing titles*/
-    background-color: var(--title-box-background);
     box-shadow: 4px 4px var(--title-box-shadow);
     border: 1px solid var(--title-box-shadow);
 }
-
+.paper-title {
+    background-image: url(../images/widepaper.jpg);
+    background-size: cover;
+}
+.paper-background {
+    background-image: url(../images/longpaper.jpg);
+    background-size: cover;
+}
+.dark-grey {
+    background-color: var(--title-box-background);
+    
+}
+#nav-title {
+    border-bottom: 2px solid var(--title-box-shadow);
+    padding: 0.1em 0;
+    font-size: 16pt;
+    margin: 0.5 auto;
+}
+.light-grey {
+    background-color:var(--info-box-background)
+}
+.offset { /*for position the top box in the centre of the page*/
+    margin-top: 5em !important;
+}
 .title { /*Defines positioning of page titles*/
     text-align: center;
     margin: auto;
     padding: 1em;
     position: relative;
 }
-
 .main-content { /*Defines boxes centre page*/
     margin: 0 auto 2em;
-    width: 30em;
+    width: 50em;
     position: relative;
-    height: 10em;
+    height: 30em;
     /* top: 7em; */
 }
-
 #main-title { /*Styles the title on the index page*/
     height: 8em ;
     width: 70%em;
@@ -60,16 +82,14 @@ h1 {
     position: relative;
     top: 1em;
 }
-
 #navbar {
     margin: 3em 2em 0 ;
     position: sticky;
     float: left;
     height: 30em;
-    width: 10em;
-    top: 10%
+    width: 8em;
+    top: 5em;
 }
-
 .nav-button {
     /* margin: auto; */
     padding: 1.5em;
@@ -78,21 +98,85 @@ h1 {
     text-decoration: none;
     display: block;
     color: black;
+    font-size: 14pt;
+    font-weight: bold;
     
 }
-
 .nav-button:hover {
-    background-color: gray;
-}
+    background-color: rgb(128, 128, 128, 0.5);
+    
 
-#footer {
-    height: 3em;
-    position: absolute;
-    bottom: 0;
 }
-
 #side-block {
     width: 13em;
     height: 100%;
     border: 1px solid black;
+}
+.readable-text {
+    font-size: 12pt;
+
+}
+.visualise-box { /*Boxes to show elements of the css box model*/
+    height: 2em;
+    width: 2em;
+    background-color: black;
+    position: relative;
+    z-index: 100;
+    padding: 2em;
+    border: 2px solid rgb(0, 0, 0);
+    background-clip: content-box;
+    margin: 2em;
+
+}
+.visualiser-container {
+    background-color: white;
+    z-index: 99;
+    height: 10em;
+    width: 10em;
+    position: absolute;
+    left: 10%;
+    top: 5em;
+    border: 2px solid black;
+    margin: 0;
+}
+.content-paragraph {
+    top: 4em;
+    float: right;
+    width: 50%;
+    position: relative;
+    font-weight: bold;
+    padding: auto;
+    text-shadow: -1px 0 var(--paragraph-shadow), 0 1px var(--paragraph-shadow), 1px 0 var(--paragraph-shadow), 0 -1px var(--paragraph-shadow);
+}
+.content-title {
+    float: right;
+    top: 1em;
+    right: 30%;
+    position: relative;
+    font-weight: bold;
+    text-shadow: -1px 0 var(--paragraph-shadow), 0 1px var(--paragraph-shadow), 1px 0 var(--paragraph-shadow), 0 -1px var(--paragraph-shadow);
+}
+#padding-box {
+    box-shadow: inset 0 0 0 2em green;
+}
+#border-box {
+   border: 2px solid red;
+}
+
+#footer{
+    position: absolute;
+    bottom: 1em;
+    width: 90%;
+    height: 1.5em;
+    left: 5%;
+}
+
+.tan-text {
+    color: tan;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.no-shadow {
+    text-shadow: 0 !important;
+    color: black;
 }
